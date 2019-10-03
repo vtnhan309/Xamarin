@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MH_Login">
+    <ContentPage.Content>
+    <Grid>
+      <Grid.RowDefinitions>
+        <RowDefinition Height="50"></RowDefinition>
+        <RowDefinition Height="50"></RowDefinition>
+        <RowDefinition Height="50"></RowDefinition>
+      </Grid.RowDefinitions>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"></ColumnDefinition>
+        <ColumnDefinition Width="2*"></ColumnDefinition>
+      </Grid.ColumnDefinitions>
+      <Label Text="User Name" Grid.Column="0" Grid.Row="0" HorizontalOptions="Start" VerticalOptions="Center"></Label>
+      <Entry x:Name="txtUser" Grid.Column="1" Grid.Row="0"></Entry>
+      <Label Text="Pass" Grid.Column="0" Grid.Row="1"></Label>
+      <Entry x:Name="txtpass" Grid.Column="1" Grid.Row="1" IsPassword="True"></Entry>
+      <Button x:Name="cmdLogin" Text="Login" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2"></Button>
+    </Grid>
+  </ContentPage.Content>
+</ContentPage>

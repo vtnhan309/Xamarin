@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App.MH_TinhTong">
+    <ContentPage.Content>
+    <StackLayout Orientation="Vertical" HorizontalOptions="Start" VerticalOptions="Start">
+      <Label Text="Màn Hình Tính Tổng!"
+            VerticalOptions="CenterAndExpand"
+             HorizontalOptions="CenterAndExpand"></Label>
+      <Label Text="Nhập số A"></Label>
+      <Entry x:Name="numA" Placeholder="Nhập số a"></Entry>
+      <Label Text="Nhập số B"></Label>
+      <Entry x:Name="numB" Placeholder="Nhập số b"></Entry>
+      <Label Text="Tổng"></Label>
+      <Entry x:Name="Sum" IsEnabled="False" Placeholder="Tổng"></Entry>
+      <Button x:Name="cmdCountSum" Text="Tính Tổng" VerticalOptions="Center" Clicked="CmdCountSum_Clicked" ></Button>
+      <Button x:Name="cmdBackHome" Text="Về Trang Chủ" VerticalOptions="End" HorizontalOptions="End" Clicked="CmdBackHome_Clicked"></Button>
+    </StackLayout>
+  </ContentPage.Content>
+</ContentPage>
